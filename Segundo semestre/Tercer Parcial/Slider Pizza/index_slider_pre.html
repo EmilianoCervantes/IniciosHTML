@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery UI Droppable - Default functionality</title>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <div id="opciones">
+            <div class="cuantos">
+                <input name="hombres" id="hombres" maxlength="2" class="numbers dato" type="text" value="0" />
+                <input name="mujeres" id="mujeres" maxlength="2" class="numbers dato" type="text" value="0" />
+                <input name="ninos" id="ninos" maxlength="2" class="numbers dato" type="text" value="0"/>
+                <input id="total" class="numbers" type="text" value="0" readonly />
+            </div>
+            
+            <div id="mood" class="antojo_botanero">
+                <div class="options"></div>
+            </div>
+            
+            <div id="slider-range-max" class="mood-slider"></div>
+            
+            <div id="calcular"><img src="img/calculadora-calcular.png"></div>
+        </div>
+        
+        <script>
+          $(function() {
+            $( "#slider-range-max" ).slider({
+              range: "max",
+              min: 1,
+              max: 4,
+              value: 1,
+              slide: function( event, ui ) {
+                
+                  //console.log(ui.value);
+                  
+                  $('#mood').removeClass();
+                  
+                  switch(ui.value){
+                          
+                          case 1: $('#mood').addClass('antojo_botanero');
+                                  break;
+                          case 2: $('#mood').addClass('puedo_esperar');
+                                  break;
+                          case 3: $('#mood').addClass('voraz');
+                                  break;
+                          case 4: $('#mood').addClass('hambre_zombie');
+                                  break;
+                  }
+              }
+            });
+               $('.dato').change(function(){
+                
+                   //Algún input cambió de valor, calcular de nuevo el total...
+                   
+                   //Sumar lo que hay en los 3 inputs...
+                   var total_personas = parseInt($('#hombres').val()) + parseInt($('#mujeres').val()) + parseInt($('#ninos').val());
+                   
+                   //Desplegarlo en el input 'total'
+                   
+                   $('#total').val(total_personas);
+               });
+          }); 
+          </script>
+    </body>
+</html>

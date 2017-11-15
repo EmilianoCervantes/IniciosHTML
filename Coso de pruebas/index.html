@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PRIMEROS PASOS CON BRACKETS</title>
+        <meta name="description" content="Una guía interactiva de primeros pasos para Brackets.">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div class="top"><div>
+        <h2>Usuarios del sistema</h2>
+        <h1>Clientes</h1>
+        <table id="cliente">
+            <tr>
+                <th>Id del Cliente</th>
+                <th>Nombre del Clietne</th>
+                <th>Empresa para la que trabaja</th>
+                <th>Correo del Cliente</th>
+            </tr>
+            <tr>
+                <th class="idCliente">{{id}}</th>
+                <th class="nomCliente">{{ nombre }} {{ apellido }}</th>
+                <th class="empresa">{{ empresa }}</th>
+                <th class="email">{{ email }}</th>
+            </tr>
+        </table>
+        <br>
+        <h1>Chats</h1>
+        <table id={{ idChat }}>
+            <tr>
+                <th>ID Cliente</th>
+                <th>Nombre del Cliente</th>
+                <th>Correo del Cliente</th>
+                <th>Tema de la conversación</th>
+                <th>Creado el</th>
+                <th>Duración de la conversación</th>
+                <th>Finalizó el</th>
+                <th>Estado</th>
+                <th>ID del Operador</th>
+                <th>Nombre del Operador</th>
+                <th>Ver todos los mensajes</th>
+            </tr>
+            <tr>
+                <th class="idCliente"> {{ id }}</th>
+                <th class="nomCliente"> {{ client_name }}</th>
+                <th class="emailCliente"> {{ client_email }}</th>
+                <th class="temaChat">{{ topic }}</th>
+                <th class="inicioChat"> {{ created_at }}</th>
+                <th class="dura"> {{ duration }}</th>
+                <th class="finChat"> {{ ended_at }}</th>
+                <th class="edo"> {{ status }}</th>
+                <th class="idOperador"> {{ operator_created_id }}</th>
+                <th class="nomOperador"> {{ operator_created_id }}</th>
+                <th class="mensajes"> <a href="mensajes.html">Mensajes</a></th>
+            </tr>
+    </table>
+    </body>
+</html>

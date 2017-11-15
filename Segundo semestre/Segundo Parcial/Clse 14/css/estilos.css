@@ -1,0 +1,112 @@
+#wrapper{
+    width: 1100px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.thumb{
+    float: left;
+    margin: 100px 0 0 100px;
+}
+
+.thumb, .capa{
+    width: 400px;
+    height: 300px;
+}
+
+.thumb{
+    position: relative;
+}
+
+.capa{
+    background-color: rgba(224,183,182,.5);
+    position: absolute; 
+    top: 0;
+}
+
+.thumbtxt{
+    background-color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    width: 400px;
+    border-top: 5px solid rgba(231,76,70,.6);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    height: 90px;
+}
+
+.thumbhover img{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.thumbtitle, .thumbdesc{
+    margin: 0;
+}
+
+.thumbtitle{
+    color: white;
+    font-size: 24px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.thumbdesc{
+    font-family: sans-serif;
+    font-size: 12px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.thumbhover{
+    visibility:hidden;
+    opacity:0;
+    transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+}
+
+.thumb:hover .thumbhover{
+    visibility:visible;
+    opacity:1;
+    transition-delay:0s;
+}
+
+.thumb:hover .capa{
+    visibility:hidden;
+    opacity:0;
+    transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+}
+
+/* CUADROS */
+.cuadroazul{
+    width: 600px;
+    height: 600px;
+    border: 1px solid blue;
+    position: relative;
+}
+
+.cuadrorojo{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    position: relative; 
+    margin: 50px 0 0 50px;
+}
+
+.cuadroverde{
+    width: 150px;
+    height: 150px;
+    border: 1px solid green;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.cuadromorado{
+    width: 300px;
+    height: 300px;
+    border: 1px solid purple;
+    position: absolute;
+    bottom: -150px;
+    right: -150px;
+}

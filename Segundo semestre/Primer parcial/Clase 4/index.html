@@ -1,0 +1,72 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Forms</title>
+    </head>
+    <body>
+        <table border="1">
+            <thead>
+            
+            </thead>
+            <tr>
+                <td>
+                
+                </td>
+                <td>
+                    <input> </br>
+                    <input> </br>
+                    <input> </br>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <select>
+                        <option value="1">10-30min</option>
+                        <option value="2" selected>30-60min</option>
+                        <option value="3">60 ó más</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Foto: </td>
+                <!-- accept es para que sólo acepte un tipo de archivo -->
+                <td><input type="file" accept="image/jpeg" name="foto"></td>
+            </tr>
+            <tr>
+                <td>Comentarios:</td>
+                <td><textarea name="comentarios" cols="60" rows="10"> </textarea></td>
+            </tr>
+            <tr>
+                <td>Escuela</td>
+                <td>
+                    <input list="escuela" />
+                    <!-- en el datalist no se pone closing tag -->
+                    <datalist id="escuela">
+                        <option value="TEC">
+                        <option value="UNITEC">
+                        <option value="UNAM">
+                        <option value="ITAM">
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>Color:</td>
+                <td><input type="color" name="color" />   </td>
+            </tr>
+            <tr>
+                <td>Fecha:</td>
+                <td><input type="date" name="fecha" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="send" value="Enviar"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="reset" value="Borrar"></td>
+            </tr>
+        </table>
+    </body>
+</html>

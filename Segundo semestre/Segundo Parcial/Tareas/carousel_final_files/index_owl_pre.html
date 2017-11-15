@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Carrusel con jQuery y OWL</title>
+        <link href="css/estilos.css" type="text/css" rel="stylesheet" />
+        
+        <script src="js/jquery-1.11.2.min.js"></script>
+        
+        <script src="js/owl.carousel.min.js"></script>
+        
+        <link href="css/owl.carousel.css" rel="stylesheet" type="text/css" />
+        <link href="css/owl.theme.css" rel="stylesheet" type="text/css" />
+        
+    </head>
+    <body>
+        <div id="wrapper">
+            <section>
+                <div id="carrusel" class="owl-carousel">
+                    <div><img src="img/01.jpg">
+                        <span class="carruseltitle carruseltitleleft"><br>MAISON & OBJET</span>
+                        <span class="carruseldesc carruseldescleft">MIAMI 12-15 MAY 2015<br></span>
+                    </div>
+
+                    <div><img src="img/02.jpg">
+                        <span class="carruseltitle carruseltitleleft hidden"><br>COLLECTION 15</span>
+                        <span class="carruseldesc carruseldescleft hidden">preview of our new collection for 2015<br>lighting - furniture - accessories<br></span>
+                    </div>
+
+                    <div><img src="img/03.jpg">
+                        <span class="carruseltitle carruseltitleleft hidden">HIELO<br>SEVILLA</span>
+                        <span class="carruseldesc carruseldescleft hidden">The Talavera Uriarte pendant lamps are 100% handmade and painted by mexican artisans with traditional patterns.</span>
+                    </div>
+
+                    <div><img src="img/04.jpg">
+                        <span class="carruseltitle carruseltitleleft hidden">LA CALETA<br>COLLECTION</span>
+                        <span class="carruseldesc carruseldescleft hidden">La Caleta creates an interesting game of lights and shadows through the hand woven structure.</span>
+                    </div>
+
+                    <div><img src="img/05.jpg">
+                        <span class="carruseltitle carruseltitleright hidden"><br>HIELO NEGRO</span>
+                        <span class="carruseldesc carruseldescright hidden">The perfect combination of Mexican craftsmanship and state of the art technology. Now available in 2 sizes.</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $('#carrusel').owlCarousel({
+                items: 1
+            }); 
+        });
+    </script>   
+</html>

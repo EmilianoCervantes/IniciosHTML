@@ -1,0 +1,146 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Historia Clínica Nutrimental</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial scale=1">
+    </head>
+    <body>
+        <header>
+            <h1>HISTORIA CLÍNICA NUTRIMENTAL</h1>
+        </header>
+        <section class="modulo">
+            <h2>MÓDULO III. EVALUACIÓN DE LA COMPOSICIÓN CORPORAL</h2>
+            <fieldset class="visible">
+                <b>Historia de peso:</b>
+                <div>Peso habitual (en el último año): <input type="number" name="pesoHab" value=""/>kg Peso ideal para el paciente: <input type="number" name="pesoIdeal" value=""/>kg</div>
+                <div>Cambios de peso en los últimos 6 meses: <input type="number" name="cambiosUlt" value=""/>kg</div>
+                <div>Peso mínimo que ha presentado el paciente en los últimos años: <input type="number" name="pesoMinUlt" value=""/>kg</div>
+                <div>Peso máximo que ha presentado el paciente en los últimos años: <input type="number" name="pesoMaxUlt" value=""/>kg</div>
+                <table id="Historia peso" border="1" style="width:100%">
+                    <tr>
+                        <th>Medida</th>
+                        <th>Fecha <input type="date" name="medidas1" value=""/></th>
+                        <th>Fecha <input type="date" name="medidas2" value=""/></th>
+                        <th>Fecha <input type="date" name="medidas3" value=""/></th>
+                        <th>Fecha <input type="date" name="medidas4" value=""/></th>
+                        <th>Fecha <input type="date" name="medidas5" value=""/></th>
+                    </tr>
+                    <tr>
+                        <td>Peso, kg</td>
+                        <td><input type="number" name="peso1" value=""/></td>
+                        <td><input type="number" name="peso2" value=""/></td>
+                        <td><input type="number" name="peso3" value=""/></td>
+                        <td><input type="number" name="peso4" value=""/></td>
+                        <td><input type="number" name="peso5" value=""/></td>
+                    </tr>
+                    <tr>
+                        <td>Talla, m</td>
+                        <td><input type="number" name="talla1" value=""/></td>
+                        <td><input type="number" name="talla2" value=""/></td>
+                        <td><input type="number" name="talla3" value=""/></td>
+                        <td><input type="number" name="talla4" value=""/></td>
+                        <td><input type="number" name="talla5" value=""/></td>
+                    </tr>
+                    <tr>
+                        <td>IMC</td>
+                        <td><input type="number" id="imc1" value=""/> </td>
+                        <td><input type="number" id="imc2" value=""/></td>
+                        <td><input type="number" id="imc3" value=""/></td>
+                        <td><input type="number" id="imc4" value=""/></td>
+                        <td><input type="number" id="imc5" value=""/></td>
+                    </tr>
+                    <tr>
+                        <td>C.Cintura, cm</td>
+                        <td><input type="number" id="cintura1" value=""/></td>
+                        <td><input type="number" id="cintura2" value=""/></td>
+                        <td><input type="number" id="cintura3" value=""/></td>
+                        <td><input type="number" id="cintura4" value=""/></td>
+                        <td><input type="number" id="cintura5" value=""/></td>
+                    </tr>
+                    <tr>
+                        <td>C.brazo, cm</td>
+                        <td><input type="number" id="brazo1" value=""/></td>
+                        <td><input type="number" id="brazo2" value=""/></td>
+                        <td><input type="number" id="brazo3" value=""/></td>
+                        <td><input type="number" id="brazo4" value=""/></td>
+                        <td><input type="number" id="brazo5" value=""/></td>
+                    </tr>
+                    <tr>
+                        <td>P.Subescapular, mm</td>
+                        <td><input type="number" id="sobresc1" value=""/></td>
+                        <td><input type="number" id="sobresc2" value=""/></td>
+                        <td><input type="number" id="sobresc3" value=""/></td>
+                        <td><input type="number" id="sobresc4" value=""/></td>
+                        <td><input type="number" id="sobresc5" value=""/></td>
+                    </tr>
+                    <tr>
+                        <td>P.Triceps, mm</td>
+                        <td><input type="number" id="triceps1" value=""/></td>
+                        <td><input type="number" id="triceps2" value=""/></td>
+                        <td><input type="number" id="triceps3" value=""/></td>
+                        <td><input type="number" id="triceps4" value=""/></td>
+                        <td><input type="number" id="triceps5" value=""/></td>
+                    </tr>
+                    <tr>
+                        <td>P.Biceps, mm</td>
+                        <td><input type="number" id="biceps1" value=""/></td>
+                        <td><input type="number" id="biceps2" value=""/></td>
+                        <td><input type="number" id="biceps3" value=""/></td>
+                        <td><input type="number" id="biceps4" value=""/></td>
+                        <td><input type="number" id="biceps5" value=""/></td>
+                    </tr>
+                    <tr>
+                        <td>P.Suprailíacp, mm</td>
+                        <td><input type="number" id="supraIl1" value=""/></td>
+                        <td><input type="number" id="supraIl2" value=""/></td>
+                        <td><input type="number" id="supraIl3" value=""/></td>
+                        <td><input type="number" id="supraIl4" value=""/></td>
+                        <td><input type="number" id="supraIl5" value=""/></td>
+                    </tr>
+                    <tr>
+                        <td>P.Abdominal, mm</td>
+                        <td><input type="number" id="abdom1" value=""/></td>
+                        <td><input type="number" id="abdom2" value=""/></td>
+                        <td><input type="number" id="abdom3" value=""/></td>
+                        <td><input type="number" id="abdom4" value=""/></td>
+                        <td><input type="number" id="abdom5" value=""/></td>
+                    </tr>
+                    <tr>
+                        <td>P.Supraespinal, mm</td>
+                        <td><input type="number" id="supraesp1" value=""/></td>
+                        <td><input type="number" id="supraesp2" value=""/></td>
+                        <td><input type="number" id="supraesp3" value=""/></td>
+                        <td><input type="number" id="supraesp4" value=""/></td>
+                        <td><input type="number" id="supraesp5" value=""/></td>
+                    </tr>
+                    <tr>
+                        <td>% de grasa</td>
+                        <td><input type="number" id="grasa1" value=""/></td>
+                        <td><input type="number" id="grasa2" value=""/></td>
+                        <td><input type="number" id="grasa3" value=""/></td>
+                        <td><input type="number" id="grasa4" value=""/></td>
+                        <td><input type="number" id="grasa5" value=""/></td>
+                    </tr>
+                </table>
+                <br/>
+                <div><label>Masa grasa según analizador de composición corporal (InBody o TANITA):</label></div>
+                <div><input type="number" name="masaAnaliz" value=""/>kg</div>
+                <div><input type="number" name="porcAnaliz" value=""/>%</div>
+                <br/>
+                <div><label>Masa grasa según pletismógrado (BODPOD):</label></div>
+                <div><input type="number" name="masaBodpod" value=""/>kg</div>
+                <div><input type="number" name="porcBodpod" value=""/>%</div>
+            </fieldset>
+            <footer>
+                <input type="submit" id="enviar" value="Enviar">
+                <br/><br/>
+                <button class="atrasMod"><a href="modulo2.html" class="atras">Anterior módulo</a></button>
+            </footer>
+        </section>
+        <script>
+        </script>
+    </body>
+</html>

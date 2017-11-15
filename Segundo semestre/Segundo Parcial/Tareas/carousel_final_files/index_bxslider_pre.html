@@ -1,0 +1,71 @@
+<!--
+1. izq, gris
+2. cent, gris
+3. der, gris
+4. izq, blanco
+5. izq, blanco
+-->
+<!doctype html>
+<html>
+    <head>
+        <title>Carrusel con jQuery y bxSlider</title>
+        <link href="css/estilos.css" type="text/css" rel="stylesheet" />
+        
+        <!-- archivos para el carrusel -->
+        
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <link href="css/jquery.bxslider.css" type="text/css" rel="stylesheet" />
+        
+    </head>
+    <body>
+        <div id="wrapper">
+            <section>
+                <span class="mainslider" id="carrusel">
+                    <!--1-->
+                    <div class="slide"><img src="img/01.jpg">
+                        <div class="slideText">
+                            <span class="carruseltitle carruseltitleleft"><br>MAISON & OBJET</span>
+                            <span class="carruseldesc carruseldescleft">MIAMI 12-15 MAY 2015<br></span>
+                        </div>
+                    </div>
+                    <!--2-->
+                    <div class="slide"><img src="img/02.jpg">
+                        <div class="slideTextCenter">
+                            <span class="carruseltitle carruseltitlecenter hidden"><br>COLLECTION 15</span>
+                            <span class="carruseldesc carruseldesccenter hidden">preview of our new collection for 2015<br>lighting - furniture - accessories<br></span>
+                        </div>
+                    </div>
+                    <!--3-->
+                    <div class="slide"><img src="img/03.jpg">
+                        <div class="slideTextRight">
+                            <span class="carruseltitle carruseltitleright hidden">HIELO<br>SEVILLA</span>
+                            <span class="carruseldesc carruseldescright hidden">The Talavera Uriarte pendant lamps are 100% handmade and painted by mexican artisans with traditional patterns.</span>
+                        </div>
+                    </div>
+                    <!--4-->
+                    <div class="slide"><img src="img/04.jpg">
+                        <div class="slideTextLeft">
+                            <span class="carruseltitle carruseltitleleft hidden">LA CALETA<br>COLLECTION</span>
+                            <span class="carruseldesc carruseldescleft hidden">La Caleta creates an interesting game of lights and shadows through the hand woven structure.</span>
+                        </div>
+                    </div>
+                    <!--5-->
+                    <div class="slide"><img src="img/05.jpg">
+                        <div class="slideTextLeft">
+                            <span class="carruseltitle carruseltitleleft hidden"><br>HIELO NEGRO</span>
+                            <span class="carruseldesc carruseldescleft hidden">The perfect combination of Mexican craftsmanship and state of the art technology. Now available in 2 sizes.</span>
+                        </div>
+                    </div>
+                </span>
+            </section>
+        </div>
+    </body>  
+    <script>
+        $(document).ready(function(){
+            $('#carrusel').bxSlider({
+                mode: 'fade' 
+            }); 
+        });   
+    </script>
+</html>

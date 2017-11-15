@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/* CSS Document */
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+header{
+    background: crimson;
+}
+.logo img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 10px;
+}
+#top{
+    background-color: crimson;
+    text-align: center;
+    display:inline-block;
+}
+#top span{
+    display: inline-block;
+    vertical-align: middle;
+}
+#nom{
+    font-family: "Pacifico";/*Pacifico Indie Flower
+ Sanchez*/
+    color:aliceblue;
+    font-size: 2em;
+    
+}
+.menuRes{
+    /*Que no se muestre*/
+    /*Sólo cuando se haga más pequeña la pantalla*/
+    display: none;
+    position: relative;
+    text-align: left;
+    font-family: "Nunito";
+    text-decoration: none;
+}
+
+#display:hover{
+    display: block;
+    /*background-color: crimson;
+    border: 0px;
+    padding:5px 10px;
+    font-size: 1em !important;*/
+    
+}
+.fa{
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+#menuContainer{
+    background-color: crimson;
+    display:inline-block;
+    margin-left: 10em;
+    text-align: right;
+    font-size:1em !important;
+    vertical-align: middle;
+}
+
+#menuContainer li{
+    display: inline-block;
+    position: relative;
+    font-family: "Sanchez";
+    color: black;
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin: 0 10px;
+}
+#menuHide{
+    display: none;
+}
+#slider{
+    /*float: right;*/
+    width:90%;
+    max-width:700px;
+    margin-left: 10px;
+    height:30em;
+    background:#ccc;
+    position:relative;
+    display:block;
+    overflow:hidden;
+}
+/* PARA EFECTO DE SLIDE PONLOS INLINE-BLOCK, METELOS EN UN .WRAPPER Y AL SLIDER SLIDER PONLE OVERFLOW
+    TODOS CON OPACITY 1
+*/
+#slider img{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    display:block;
+    margin:0 auto;
+    opacity:0;
+    -webkit-transition:all 1s;
+    transition: all 1s;
+}
+#slider img.active{
+    opacity:1;   
+}
+
+/*PARALLAX*/
+/*http://keithclark.co.uk/articles/pure-css-parallax-websites/*/
+
+/* envuelve todo */
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* hasta enfrente */
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+/* atrás del base */
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+}
+/* hasta atrás */
+.parallax__layer--deep {
+  transform: translateZ(-2px) scale(3);
+}
+/* envuelve por grupos */
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+/*
+//////////////////////////////
+//////////Responsive//////////
+//////////////////////////////
+*/
+
+@media screen and (max-width:600px){
+    #top, #breadcrumscontainer{
+        display: none;
+    }
+    #menuContainer{
+        display: none;
+    }
+    #top{
+        display: block;
+    }
+    .menuRes{
+        display: inline-block;
+        padding-left: 10px;
+    }
+    .menuRes .fa{
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 2em;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transform: translate(0, 0);
+    }
+    .menuResDis{
+        display: none;
+        text-decoration: none;
+        font-family: "Nunito";
+    }
+    .menuRes:hover{
+        background-color: #fff;
+        display: list-item;
+    }
+    #slider{
+        height: 20em;
+    }
+}

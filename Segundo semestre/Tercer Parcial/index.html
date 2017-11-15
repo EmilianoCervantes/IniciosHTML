@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>	Javascript</title>
+        <script>
+            //var mensaje= window.prompt("Dentro del mensaje", "dentro del cuadro de texto");
+            var numero1 = parseInt(window.prompt("Dame un  numero"));
+            var numero2 = parseInt(window.prompt("Dame un  numero"));
+            var operacion = window.prompt("Dame la operación");
+            switch(operacion){
+                case: "+":
+                    document.writeln(numero1+numero2);
+                    break;
+                case: "-":
+                    document.writeln(numero1-numero2);
+                    break;
+                case: "*":
+                    document.writeln(numero1*numero2);
+                    break;
+                case: "/":
+                    document.writeln(numero1/numero2);
+                    break;
+                 case: "%":
+                    document.writeln(numero1%numero2);
+                    break;
+                default:
+                    document.write("No seas estúpido eso no existe")
+                    break;
+            }
+            for(i=1; i<10; i++){
+                document.write(i, "<br/>");
+            }
+        </script>
+	</head>
+	<body> <!-- oh, esto es un comentario-->
+	</body>
+</html>

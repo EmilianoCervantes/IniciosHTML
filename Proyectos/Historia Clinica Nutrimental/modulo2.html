@@ -1,0 +1,273 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Historia Clínica Nutrimental</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial scale=1">
+    </head>
+    <body>
+        <header>
+            <h1>HISTORIA CLÍNICA NUTRIMENTAL</h1>
+        </header>
+        <section class="modulo">
+            <h2>MÓDULO II. EVALUACIÓN DIETÉTICA</h2>
+            <fieldset class="visible">
+                <legend>
+                    <h3>1. HISTORIA DIETÉTICA</h3>
+                </legend>
+                <form>
+                    <ol>
+                        <li>¿Cuántas comidas realizas al día (incluyendo colaciones)?<input type="number" name="comidasDia" value=""/> (Si omite alguna comida explicar las razones) <input type="text" name="omiteComida" value=""/></li>
+                        <li>¿Eres alérgico a algún alimento?<input type="radio" name="alergiaAlmin" value="SI"/>SI <input type="radio" name="alergiaAlim" value="NO"/>NO </li>
+                        <li>¿Tienes intolerancia a algún alimento?<input type="radio" name="intoleranteAlim" value="SI"/>SI <input type="radio" name="intoleranteAlim" value="NO"/>NO ¿A qué alimentos?<input type="text" name="intoleranteAlim" value=""/></li>
+                        <li>¿Comes viendo la televisión?<input type="radio" name="teleAlim" value="SI"/>SI <input type="radio" name="teleAlim" value="NO"/>NO <input type="radio" name="teleAlim" value="mayoriaVeces"/>La mayoría de las veces</li>
+                        <li>¿Con qué frecuencia comes algo entre comidas mientras ves televisión?<input type="number" name="comerTeleEntre" value=""> a la semana</li>
+                        <li>¿Le agregas sal a tus alimentos?<input type="radio" name="salAlim" value="SI"/>SI <input type="radio" name="salAlim" value="NO"/>NO (<input type="radio" name="salProbar" value="antesProbar"/>antes de probarlos <input type="radio" name="salProbar" value="despuesProbar"/>después de probarlos <input type="radio" name="salProbar" value="ambos"/>ambos)</li>
+                        <li>Durante la última semana, en promedio, ¿cuántas veces a la semana comiste
+                            a) fuera de casa <input type="number" name="fueraCasa" value=""/>
+                            b) restaurantes <input type="number" name="restaurantes" value=""/>
+                            c) en casa <input type="number" name="enCasa" value=""/>
+                        </li>
+                        <li>¿Quién prepara los alimentos?
+                            <select name="">
+                                <option>Papá</option>
+                                <option>Mamá</option>
+                                <option>Hermano/a</option>
+                                <option>Yo</option>
+                                <option>Alguien más</option>
+                            </select>
+                        </li>
+                        <li>¿Cuántos días a la semana desayunas algo sólido (además de café, jugo, leche y té)? <input type="number" name="desayunoSolido" value=""/></li>
+                        <li>¿En promedio, cuántas comidas al día realizas? <input type="number" name="promComidasDia" value=""/></li>
+                        <li>¿Has tomado suplementos o complementos alimenticios en los últimos 6 meses?<input type="radio" name="suplAlim" value="SI"/>SI <input type="radio" name="suplAlim" value="NO"/>NO ¿Cuáles? <input type="text" name="suplAlim" value=""/></li>
+                    </ol>
+                </form>
+        </fieldset>
+
+        <fieldset>
+                <legend>
+                    <h3>2. FRECUENCIA DE CONSUMO DE ALIMENTOS</h3>
+                </legend>
+                <table border="1" style="width:100%">
+                    <tr>
+                        <th>Alimentos</th>
+                        <th>V/S</th>
+                        <th>Cantidad/día</th>
+                        <th>Aliemtnos</th>
+                        <th>V/S</th>
+                        <th>Cantidad/día</th>
+                    </tr>
+
+                    <tr>
+                        <td><b><u>Cereales</u></b></td>
+                    </tr>
+
+                    <tr>
+                        <td>Tortilla</td>
+                        <td></td>
+                        <td></td>
+                        <td><b><u>AOA</u></b></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Pan</td>
+                        <td></td>
+                        <td></td>
+                        <td>Res</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Pan de caja</td>
+                        <td></td>
+                        <td></td>
+                        <td>Pollo</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Galletas</td>
+                        <td></td>
+                        <td></td>
+                        <td>Pescado</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Arroz</td>
+                        <td></td>
+                        <td></td>
+                        <td>Mariscos</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Pastas</td>
+                        <td></td>
+                        <td></td>
+                        <td>Huevo</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Hojuelas de maíz de caja</td>
+                        <td></td>
+                        <td></td>
+                        <td>Embutidos</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Pan de caja</td>
+                        <td></td>
+                        <td></td>
+                        <td>Queso</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td><b><u>Cereales con grasa</u></b></td>
+                        <td></td>
+                        <td></td>
+                        <td><b><u>Leche</u></b></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td><b><u>Leguminosa</u></b></td>
+                        <td></td>
+                        <td></td>
+                        <td><b><u>Grasas</u></b></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td><b><u>Frutas</u></b></td>
+                        <td></td>
+                        <td></td>
+                        <td><b><u>Azúcares</u></b></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td><b><u>Verduras</u></b></td>
+                        <td></td>
+                        <td></td>
+                        <td><b><u>Bebidas con azúcar añadida (refrescos, jugos, agua fresca)</u></b></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td><b><u>Bebidas artificialmente endulzadas (light)</u></b></td>
+                        <td></td>
+                        <td></td>
+                        <td><b><u>Alimentos más consumidos (no mencionados)</u></b></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td><b><u>Agua simple</u></b></td>
+                        <td></td>
+                        <td></td>
+                        <td><b><u>Alimentos más consumidos no mencionados</u></b></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+        </fieldset>
+
+        <fieldset>
+                <legend>
+                    <h3>3. RECORDATORIO DIETÉTICO DE 24 HRS.</h3>
+                </legend>
+                <table id="Recordatorio 24hrs" border="1" style="width:100%">
+                    <tr>
+                        <th>Alimentos</th>
+                        <th>TIPO</th>
+                        <th>MARCA</th>
+                        <th>Cantidad (med. casera)</th>
+                        <th>Cantidad ml ó g/día</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="aliRec1" value=""/></td>
+                        <td><input type="text" name="aliRec2" value=""/></td>
+                        <td><input type="text" name="aliRec3" value=""/></td>
+                        <td><input type="text" name="aliRec4" value=""/></td>
+                        <td><input type="text" name="aliRec5" value=""/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="tipoRec1" value=""/></td>
+                        <td><input type="text" name="tipoRec2" value=""/></td>
+                        <td><input type="text" name="tipoRec3" value=""/></td>
+                        <td><input type="text" name="tipoRec4" value=""/></td>
+                        <td><input type="text" name="tipoRec5" value=""/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="marcaRec1" value=""/></td>
+                        <td><input type="text" name="marcaRec2" value=""/></td>
+                        <td><input type="text" name="marcaRec3" value=""/></td>
+                        <td><input type="text" name="marcaRec4" value=""/></td>
+                        <td><input type="text" name="marcaRec5" value=""/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="cantCasRec1" value=""/></td>
+                        <td><input type="number" name="cantCasRec2" value=""/></td>
+                        <td><input type="number" name="cantCasRec3" value=""/></td>
+                        <td><input type="number" name="cantCasRec4" value=""/></td>
+                        <td><input type="number" name="cantCasRec5" value=""/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="cantRec1" value=""/></td>
+                        <td><input type="number" name="cantRec2" value=""/></td>
+                        <td><input type="number" name="cantRec3" value=""/></td>
+                        <td><input type="number" name="cantRec4" value=""/></td>
+                        <td><input type="number" name="cantRec5" value=""/></td>
+                    </tr>
+                </table>
+                <div>
+                    <b>Energía total (R24 hrs.): </b><input type="number" name="enerTot" value=""/> <b>% de adecuación energética: </b><input type="number" name="%AdecEner" value=""/>
+                </div>
+                <div>
+                    <b>% de distribución HC: </b><input type="number" name="%DistHC" value=""/> <b>Proteínas: </b><input type="number" name="distProt" value=""/> <b>Lípidos: </b><input type="number" name="distLipidos" value=""/>
+                </div>
+                <div>
+                    <b>% de adecuación HC: </b><input type="number" name="%AdecHC" value=""/> <b>Proteínas: </b><input type="number" name="adecProt" value=""/> <b>Lípidos: </b><input type="number" name="adecLipidos" value=""/>
+                </div>
+            </fieldset>
+            <footer>
+                <input type="submit" id="enviar" value="Enviar">
+                <br/><br/>
+                <button class="atrasMod"><a href="index.html" class="atras">Anterior módulo</a></button>
+                <button class="sigMod"><a href="modulo3.html" class="siguiente">Siguiente módulo</a></button>
+            </footer>
+        </section>
+        <script>
+            /*$(document).ready(function(){
+                $('.siguiente').on('click',function(e){
+                    $(this).parent().next().toggle();
+                    e.preventDefault();
+                });
+                $('#alternar-todo').on('click',function(e){
+                    $('.respuesta').toggle('slow');
+                    e.preventDefault();
+                });
+            });*/
+        </script>
+    </body>
+</html>

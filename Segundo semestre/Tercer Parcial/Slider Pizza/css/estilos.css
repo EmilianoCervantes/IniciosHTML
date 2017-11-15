@@ -1,0 +1,123 @@
+.draggable {
+ 
+}
+
+.atributo {
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/thing.png');
+}
+
+#droppable {
+  
+}
+
+.droppable-area{
+    width: 500px;
+    height: 500px;
+    background-image: url('../img/drop.png');
+}
+
+.att1{
+    background-image: url('../img/att1.png');
+}
+
+.ui-widget-header {
+  border: 1px solid #aaaaaa;
+  background: #cccccc;
+  color: #222222;
+  font-weight: bold;
+}
+
+/************************************************************/
+
+#opciones{
+    width: 960px;
+    margin: 30px auto;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.cuantos {
+  width: 940px;
+  height: 157px;
+  background: url('../img/calculadora-cuantos.png') no-repeat;
+}
+
+.cuantos input, .cuantos .total {
+  position: absolute;
+  top: 88px;
+  width: 110px;
+  height: 65px;
+  border: none;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 52px;
+  background: none;
+}
+
+input[name="hombres"] {
+  left: 228px;
+}
+
+input[name="mujeres"] {
+  left: 417px;
+}
+
+input[name="ninos"] {
+  left: 604px;
+}
+
+#total {
+  left: 804px;
+}
+
+.mood-slider{
+    width: 641px !important;
+    position: relative;
+    left: 122px;
+    margin: 20px 18px;
+    height: 32px;
+}
+
+.ui-slider .ui-slider-handle{
+    width: 120px;
+    height: 42px;
+    margin-left:  -60px;
+}
+
+#mood{
+    width: 940px;
+    height: 132px;
+    padding: 16px;
+    background: url('../img/calculadora-mood-container.png') no-repeat;
+}
+
+#mood .options {
+  width: 908px;
+  height: 99px;
+  background: url('../img/calculadora-mood-legend.png') no-repeat;
+}
+
+#mood.antojo_botanero .options {
+  background-position: 0 -99px;
+}
+
+#mood.puedo_esperar .options {
+  background-position: 0 -198px;
+}
+
+#mood.voraz .options {
+  background-position: 0 -297px;
+}
+
+#mood.hambre_zombie .options {
+  background-position: 0 -396px;
+}
+
+#calcular{
+    clear: both;
+    text-align: center;
+}

@@ -1,0 +1,112 @@
+<!--La página debe ser sencilla para cualquier usuario-->
+<!--tengo varias imágenes en la carpeta-->
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Pizza, Buena, Coelho, Pizzeria">
+        <meta name="description" content="Pizzería Coelhos Pizza">
+        <meta name="author" content="Emiliano, Roberto, Jordan">
+        <title>Coelhos Pizza</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/jquerySlider.js"></script>
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Sanchez|Indie+Flower|Pacifico' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <header>
+            <div id="top">
+                <span class="logo">
+                    <img src="img/logo-pizza%20copia.jpg"/>
+                </span>
+                <span class="nomPizzeria">
+                    <!--imagen con el nombre de la pizzería o sólo el nombre-->
+                    <div id="nom">Coelhos Pizza</div>
+                </span>
+            </div>
+            <div class="menuRes">
+                <!--Cuando se haga más pequeña la pantalla - click ->desplegar menú-->
+                <i class="fa fa-bars"></i>
+                <ul class="menuResDis">
+                    <!--<a href="#.">Promo del día</a>-->
+                    <li><a href="paquetes.html">Paquetes</a></li>
+                    <li><a href="sugerencias.html">Sugerencias</a></li>
+                    <li><a href="#.">Bebidas</a></li>
+                    <li><a href="#.">Postres</a></li>
+                    <li><a href="sucursal.html">Sucursales</a></li>
+                </ul>
+            </div>
+            <div id="menuContainer">
+                <ul id="principal">
+                    <!--cambiarlo después por sucursales-->
+                    <li id="display">Menú <i class="fa fa-arrow-circle-down"></i></li>
+                    <ul id="menuHide">
+                        <!--<a href="#."><li>Promoción del día</li></a>-->
+                        <li><a href="#.">Bebidas</a></li>
+                        <li><a href="#.">Acompañamientos</a></li>
+                        <li><a href="#.">Postres</a></li>
+                    </ul>
+                    <a href="sugerencias.html"><li></li></a>
+                    <a href="paquetes.html"><li></li></a>
+                    <a href="sucursal.html"><li></li></a>
+                    <a href="#."><li></li></a>
+                </ul>
+            </div>
+        </header>
+        <div id="slider">
+            <!--varias imágenes que pasen en secuencia-->
+            <div id="container">
+                <img src="img/pepperoni1.jpg" />
+                <img src="img/queso1.jpg"/>
+                <img src="img/anchoas2.jpg"/>
+            </div>
+        </div>
+        <div class="centro">
+            <!--imags -->
+            <a href="#."><img src="img/ubicacion2.jpg"/><p>Sucursales</p></a><!--ubicaciones-->
+            <a href="#."><img src="img/chat4.jpg"/><p>Chat</p></a><!--chat-->
+            <!--Viene en Paquetes y Sugerencias--><a href="#."><img src="img/domicilio2.jpg" /><p>Ordenar en línea</p></a><!--orden en línea-->
+            <a href="#."><img src="img/info.png"/><p>Acerca de</p></a><!--descripción/info-->
+        </div>
+        <footer>
+            <div id="contacto">
+                <!--íconos-->
+                <!--39X39px-->
+                <a href="#."><img src="img/icon_fb.png" /></a><!--fb-->
+                <a href="#."><img src="img/icon_tw.png" /></a><!--twitter-->
+                <a href="#."><img id="plus" src="img/icon_plus1.png" /></a><!--plus-->
+                <img id="tel" src="img/icon_tel.png" /> 01 800-Coelhos<!--tel-->
+            </div>
+        </footer>
+        <script>
+            $("#menuDisplay").click(function(){
+                $("#menuHide").slideToggle("slow");
+            });
+        </script>
+        
+        <script>
+            var slides = 0;
+            $('#slider img').each(function () {
+                slides++;
+            });
+            var active = 1;
+            var time =  setInterval(change, 3000);
+            /* Y AQUI PONLE QUE A CADA CAMBIO HAGA UN .WRAPPER -WEBKIT-TRANSFORM:TRANSLATEX(-100%)
+            Y VE GUARDANDO CUANTO HACES PARSA QUE CUANDO LLEGUE A LA ULTIMA LO REGRESES A LA PRIMERA
+            */
+            function change() {
+                if(active<=slides){
+                    $('#slider img').removeClass('active');
+                    $('#slider img:nth-child(' + active + ')').addClass('active');
+                    active++;
+                }
+                else{
+                    active=1;
+                    change();
+                }
+            }
+        </script>
+    </body>
+</html>

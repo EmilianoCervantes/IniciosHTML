@@ -1,0 +1,56 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Expediente Clínico</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script>
+            $(document).ready(function()
+            $("p").click(function(){
+            $(this).hide();});});
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Expediente Clínico</h1>
+        </header>
+        <h2>Datos iniciales:</h2>
+        <div>
+            <label for="nombreInstitucion">Nombre de la institución: </label><input type="text" name="nombreInstitucion" id="nombreInstitucion">
+        </div>
+        <div>
+            <label for="Tipo">Tipo (clave): </label>
+            <!--Clasificación de Instituciones de Salud - Inegi -->
+            <select name="tipoInst">
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                
+            </select>
+        </div>
+        <div>
+            <label for="domicilioEstablecimiento">Domicilio del establecimiento: </label><input type="text" name="domicilioEstablecimiento" id="domicilioEstablecimiento">
+        </div>
+        <div>
+            <label for="NombrePers">Nombre: </label><input type="text" name="Nombre" id="Nombre"/>
+        </div>
+        <div>
+            <label for="sexo">Sexo: </label><input type="radio" name="Sexo" value="Masc"/>H <input type="radio" name="Sexo" value="Fem"/>M
+        </div>
+        <div>
+            <label for="edad">Edad: </label><input type="number" name="edad" id="edad"/> años
+        </div>
+        <div>
+            <label for="domicilioPersonal">Domicilio: </label><input type="text" name="domicilioPersonal" id="domicilioPersonal"/>
+        </div>
+        <div>
+            <label for="ocupUsuario">Ocupación del usuario: </label><input type="text" name="ocupUsuario" id="ocupUsuario">
+        </div>
+    </body>

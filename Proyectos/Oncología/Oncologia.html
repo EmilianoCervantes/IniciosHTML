@@ -1,0 +1,222 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Oncología</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial scale=1">
+    </head>
+    <body>
+        <header>
+            <h1>Registro Oncología</h1>
+        </header>
+        <form class="oncología">
+            <div class="uno">
+                <span>Registro <input type="text" id="regPac" value=""/></span>
+                <span>Oncología <input type="number" id="oncolPac" value=""/></span>
+            </div>
+            <div class="dos">
+                <span>Estado 
+                    <select id="edoPac">
+                    <option>No revisado</option>
+                    <option>Revisado</option>
+                    </select>
+                </span>
+                <span>Unidad <input type="text" id="unidadPac" value=""/></span>
+            </div>
+            <div class="uno">
+                <span>Género 
+                    <select id="genPac">
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                    </select>
+                </span>
+                <span>Edad <input type="number" id="edadPac" value=""/></span>
+            </div>
+            <div class="dos">
+                <span>Diagnóstico <input type="text" id="diagPac" value=""/></span>
+                <span>Referido por <input type="text" id="refPac" value=""/></span>
+            </div>
+            <div class="uno">
+                <span>¿Regresó el px después de CPV? 
+                    <select id="regresPac">
+                        <option>Sí</option>
+                        <option>No</option>
+                    </select>
+                </span>
+                <span>¿Se Dx en la Unidad? 
+                    <select id="dxUnidPac">
+                        <option>Sí</option>
+                        <option>BFU</option>
+                        <option>DFU</option>
+                        <option>OFU</option>
+                        <option>BFU/OFU</option>
+                    </select>
+                </span>
+            </div>
+            <div class="dos">
+            <span>¿Complicación del Tx previo? 
+                <select id="complPac">
+                    <option>Sí</option>
+                    <option>No</option>
+                </select>
+            </span>
+            <span>¿Acudió a su tratamiento? 
+                <select id="acudTratPac">
+                    <option>Sí</option>
+                    <option>No</option>
+                </select>
+            </span>
+            </div>
+            <div class="uno">
+            <span>¿Terminó su tratamiento? 
+                <select id="terminTratPac">
+                    <option>Sí</option>
+                    <option>No</option>
+                </select>
+            </span>
+            <span>¿Continuó en seguimiento? 
+                <select id="seguimPac">
+                    <option>En seguimiento</option>
+                    <option>Seguimiento incompleto</option>
+                    <option>Referido</option>
+                    <op>Sin seguimieto</op>
+                </select>
+            </span>
+            </div>
+            <div class="dos">
+                <span>Referido a <input type="text" id="refAPac" value=""/></span>
+                <span>Hoja inicial <input type="text" id="hojaIniPac" value=""/></span>
+            </div>
+            <div class="uno">
+                <span>Teléfono <input type="number" id="telPac" value=""/></span>
+                <span>Fecha 1ra vez <input type="date" id="1raVezPac" value=""/></span>
+            </div>
+            <div class="dos">
+                <span>ECU <input type="text" id="ecuPac" value=""/></span>
+                <span>Lugar de orgigen <input type="text" id="lugarOrigPac" value=""/></span>
+            </div>
+            <div class="uno">
+                <span>Ocupación <input type="text" id="ocupPac" value=""/></span>
+                <span>Escolaridad 
+                    <select id="escoPac">
+                        <option>Post-doctorado</option>
+                        <option>Doctorado</option>
+                        <option>Meastría</option>
+                        <option>Licenciatura</option>
+                        <option>Universidades Tecnológica</option>
+                        <option>Bachillerato técnico</option>
+                        <option>Bachillerato</option>
+                        <option>Secundaria</option>
+                        <option>Primaria</option>
+                        <option>Analfabeta</option>
+                    </select>
+                </span>
+            </div>
+            <div class="dos">
+                <span>HAS <input type="number" id="hasPac" value=""/></span>
+                <span>DM2 <input type="number" id="dm2Pac" value=""/></span>
+            </div>
+            <div class="uno">
+                <span>Tabaquismo <input type="number" id="tabaqPac" value=""/></span>
+                <span>Alcoholismo <input type="number" id="alcoholPac" value=""/></span>
+            </div>
+            <div class="dos">
+                <span>Tiempo PA <input type="number" id="tiempoPaPac" value=""/>meses</span>
+                <span>Síntoma Principal <input type="text" id="sintPrinPac" value=""/></span>
+            </div>
+            <div class="uno">
+                <span>BFU <input type="number" id="bfuPac" value=""/></span>
+                <span>RHP <input type="text" id="rhpPac" value=""/></span>
+            </div>
+            <div class="dos">
+                <span>OFU <input type="number" id="ofuPac" value=""/></span>
+                <span>Qx <input type="text" id="qxPac" value=""/></span>
+            </div>
+            <div class="uno">
+                <span>Dx Inicial <input type="text" id="dxPac" value=""/></span>
+                <span>Notas <input type="text" id="notasPac" value=""/></span>
+            </div>
+            <div class="dos">
+                <span>Tratamiento <input type="text" id="trataPac" value=""/></span>
+                <span>Tx en la Unidad <input type="text" id="txPac" value=""/></span>
+            </div>
+            <div class="uno">
+                <span>Fecha Cirugía <input type="date" id="fechaCiruPac" value=""/></span>
+                <span>Procedimiento <input type="text" id="procedPac" value=""/></span>
+            </div>
+            <div class="dos">
+                <span>Cirujano <input type="text" id="cirujPac" value=""/></span>
+                <span>RT <input type="text" id="rtPac" value=""/></span>
+            </div>
+            <div class="uno">
+                <span>QT <input type="text" id="qtPac" value=""/></span>
+                <span>Complicaciones 
+                    <select id="complicPac">
+                        <option>Sí</option>
+                        <option>No</option>
+                    </select>
+                </span>
+            </div>
+            <div class="dos">
+                <span>Fin de Tratamiento <input type="date" id="finTratPac" value=""/></span>
+                <span>RHP & Etapa Clínica <input type="text" id="rhpYEta´ClinPac" value=""/></span>
+            </div>
+            <div class="uno">
+                <span>Tipo Patología <input type="text" id="tipoPatoPac" value=""/></span>
+                <span>Lado 
+                    <select id="ladoPac">
+                        <option>Izquierdo</option>
+                        <option>Derecho</option>
+                    </select>
+                </span>
+            </div>
+            <div class="dos">
+                <span>Sitio <input type="text" id="sitioPac" value=""/></span>
+                <span>Subsitio <input type="text" id="subSitioPac" value=""/></span>
+            </div>
+            <div class="uno">
+                <span>Tipo de Biopsia Dx <input type="text" id="tipoBioDxPac" value=""/></span>
+                <span>¿Intentos Dx? <input type="number" id="intenDxPac" value=""/></span>
+            </div>
+            <div class="dos">
+                <span>RHP Biopsia Dx <input type="text" id="rhpBioDxPac" value=""/></span>
+                <span>RHP definitivo <input type="text" id="rhpDefPac" value=""/></span>
+            </div>
+            <div class="uno">
+                <span>Grado Histológico <input type="text" id="gradoHistPac" value=""/></span>
+                <span>Bordes/lecho positivo 
+                    <select id="bordPosPac">
+                        <option>Sí</option>
+                        <option>No</option>
+                    </select>
+                </span>
+            </div>
+            <div class="dos">
+                <span>cTNM <input type="text" id="ctnmPac" value=""/></span>
+                <span>No biopsia <input type="text" id="noBioPac" value=""/></span>
+            </div>
+            <div class="uno">
+                <span>Descripción pTNM <input type="text" id="descPtnmPac" value=""/></span>
+                <span>pTNM <input type="text" id="ptnmPac" value=""/></span>
+            </div>
+            <div class="dos">
+                <span>Etapa Clínica <input type="text" id="etaClinPac" value=""/></span>
+                <span>Estado Actual <input type="text" id="edoActualPac" value=""/></span>
+            </div>
+            <div class="uno">
+                <span>Seguimiento <input type="text" id="seguimPac" value=""/></span>
+                <span>Estado actual <input type="text" id="edoactPac" value=""/></span>
+            </div>
+            <div class="dos">
+                <span>Fecha de recurrencia <input type="date" id="recurrPac" value=""/></span>
+                <span>Última consulta <input type="date" id="ultimConsPac" value=""/></span>
+            </div>
+            <div class="uno">
+                <span>Observaciones <input type="text" id="obsPac" value=""/></span>
+            </div>
+            <div class="tres"><input type="submit"/></div>
+        </form>
+    </body>
+</html>

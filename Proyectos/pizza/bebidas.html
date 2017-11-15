@@ -1,0 +1,92 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Pizza, Buena, Coelho, Pizzeria">
+        <meta name="description" content="Bebidas de la pizzería Coelhos Pizza">
+        <meta name="author" content="Emiliano, Roberto, Jordan">
+        <title>Coelhos Pizza</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Sanchez|Indie+Flower|Pacifico' rel='stylesheet' type='text/css'>
+        
+        <script src="js/jquery.bxslider.js"></script>
+        <!-- bxSlider CSS file -->
+        <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div id="top">
+                <span class="logo">
+                    <img src="img/logo-pizza%20copia.jpg"/>
+                </span>
+                <span class="nomPizzeria">
+                    <!--imagen con el nombre de la pizzería o sólo el nombre-->
+                    <div id="nom">Coelhos Pizza</div>
+                </span>
+            </div>
+            <div class="menuRes">
+                <!--Cuando se haga más pequeña la pantalla - click ->desplegar menú-->
+                <i class="fa fa-bars"></i>
+                <ul class="menuResDis">
+                    <!--<a href="#.">Promo del día</a>-->
+                    <a href="acomp.html"><li>Acompañamientos</li></a>
+                    <a href="paquetes.html"><li>Orden</li></a>
+                    <a href="sucursal.html"><li>Sucursales</li></a>
+                    <a href="index.html" id="regresar"><li><i class="fa fa-hand-o-left"></i> Regresar</li></a>
+                </ul>
+            </div>
+            <div id="menuContainer">
+                <ul id="principal">
+                    <a href="acomp.html"><li>Acompañamientos <i class="fa fa-arrow-circle-right"></i></li></a>
+                    <a href="paquetes.html"><li>Orden</li></a>
+                    <a href="sucursal.html"><li>Sucursales</li></a>
+                    <a href="#abajo"><li>Contacto</li></a>
+                    <a href="index.html" id="regresar"><li><i class="fa fa-hand-o-left"></i> Regresar</li></a>
+                </ul>
+            </div>
+        </header>
+        
+        <div class="ref">
+            <span class="bebidas" id="bebi"><img src="img/coca.png"/> </span>
+            <span class="bebidas" id="bebi"><img src="img/Fanta.png"/></span>
+        </div>
+        <div class="ref">
+            <span class="bebidas" id="beb"><img src="img/Fresca.png"/></span>
+            <span class="bebidas" id="beb"><img src="img/manzana.png"/></span>
+        </div>
+        
+        <footer>
+            <div id="contacto">
+                <!--íconos-->
+                <!--39X39px-->
+                <a href="#."><i class="fa fa-facebook-square fa-6"></i></a><!--fb-->
+                <a href="#."><i class="fa fa-twitter-square fa-6"></i></a><!--twitter-->
+                <a href="#."><i class="fa fa-google-plus-square fa-6"></i></a><!--plus-->
+                <img id="tel" src="img/icon_tel.png" /> 01 800-Coelhos<!--tel-->
+            </div>
+        </footer>
+        <a id="abajo"></a>
+        <script>
+            $('document').ready(function(){
+                $('.bxslider').bxSlider();   
+            });
+            $('.menuRes i ').click(function(){
+               if( $('.menuResDis').hasClass("display") ){
+                       $('.menuResDis').removeClass("display");
+               }else{
+                    $('.menuResDis').addClass("display");   
+               }
+            });
+            $('#display').click(function(){
+                 if( $('#menuHide').hasClass("display") ){
+                       $('#menuHide').removeClass("display");
+               }else{
+                    $('#menuHide').addClass("display");   
+               }
+            });
+        </script>
+    </body>
+</html>

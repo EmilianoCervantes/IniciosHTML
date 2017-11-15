@@ -1,0 +1,445 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Historia Clínica Nutrimental</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial scale=1">
+    </head>
+    <body>
+        <header>
+            <h1>HISTORIA CLÍNICA NUTRIMENTAL</h1>
+        </header>
+        <!--Cada sección es un módulo-->
+        <section class="modulo">
+            <h2>MÓDULO I.</h2>
+            <!--cada fieldset es una sección del módulo-->
+            <fieldset class="visible">
+                <legend>
+                    <h3> 1. DATOS GENERALES</h3>
+                </legend>
+                <div><label for="Nombre">Nombre: </label> <input type="text" name="nombre" id="nombre">
+                    <label for="Fecha">Fecha: </label> <input type="date" name="fecha" />
+                </div>
+
+                <div><label for="Matricula">No. de matrícula: </label> <input type="text" name="matricula" id="matricula"/>
+                    <label for="Birth">Fecha de nacimiento: </label> <input type="date" name="Birth"/>
+                </div>
+
+                <div>
+                    <label for="Edad">Edad: </label> <input type="number" name="age" size="5" value=""/>
+                    <label for="Sexo">Sexo: </label> <input type="radio" name="gender" value="Male"/>
+                    <label for="Masculino">M </label> <input type="radio" name="gender" value="Female"/> <label for="femenino">F</label>
+                </div>
+
+                <div>
+                    <label for="Religion">Religión: </label> <input type="text" name="religion" id="religion"/>
+                    <label for="semestre">Escolaridad(semestre): </label> <input type="number" name="semestre" value=""/>
+                </div>
+
+                <div>
+                    <label for="EdoCivil">Edo. Civil: </label>
+                        <select>
+                            <option value="None selected">Seleccione uno:</option>
+                            <option>Soltero/a</option>
+                            <option>Casado/a</option>
+                            <option>Viudo/a</option>
+                            <option>Divorciado/a</option>
+                        </select>
+
+                    <label for="Hijos">No. de hijos</label> <input type="number" name="hijos" value=""/>
+                </div>
+
+                <div>
+                    <label for="Tel">Teléfono(local): </label> <input type="number" name="tel" value=""/>
+                    <label for="Cel">Teléfono celular: </label> <input type="number" name="cel" value=""/>
+                </div>
+
+                <div>
+                    <label for="email">Correo electrónico: </label> <input type="email" name="email" size="35" value=""/>
+                </div>
+
+                <div>
+                    <label for="tutor">Nombre del padre o tutor: </label> <input type="text" name="tutor" id="tutor"/>
+                    <label for="telTutor">Teléfono (del tutor): </label> <input type="number" name="tutor" value=""/>
+                </div>
+
+                <div>
+                    <label for="motivo"><b>Motivo de consulta:</b></label> <input type="text" name="motivo" size="40" id="motivo"/>
+                </div>
+                <br/>
+                <button id="sigDos">Siguiente</button>
+            </fieldset>
+
+            <fieldset class="segundo">
+                <legend>
+                    <h3>2. HISTORIA CLÍNICA</h3>
+                </legend>
+                <form id="Antecedentes personales">
+                    <div>
+                        <label for="antecedentes"><b>Antecedentes personales</b></label>
+
+                        <label for="Familiares"><b>Familiares</b></label>
+                    </div>
+
+                    <div>
+                        Parentesco
+                    </div>
+
+                    <div>
+                        <label for="Diabetes">Diabetes: </label> <input type="radio" name="diabetes" value="SI"/>SI <input type="radio" name="diabetes" value="NO"/>NO
+                        <input type="radio" name="diabetesFam" value="SI"/>SI <input type="radio" name="diabetesFam" value="NO"/>NO
+                        <select name="DiabetesFam">
+                                <option>Padre</option>
+                                <option>Madre</option>
+                                <option>Hermano</option>
+                                <option>Hermana</option>
+                                <option>Abuelo</option>
+                                <option>Abuela</option>
+                                <option>Tío</option>
+                                <option>Tía</option>
+                                <option>Primo</option>
+                                <option>Prima</option>
+                            </select> 
+                    </div>
+
+                    <div>
+                        <label for="Tension">Hipertensión: </label> <input type="radio" name="hipertensión" value="SI"/>SI <input type="radio" name="hipertensión" value="NO"/>NO
+                        <input type="radio" name="tensionFam" value="SI"/>SI <input type="radio" name="tensionFam" value="NO"/>NO
+                        <select name="TensionFam">
+                                <option>Padre</option>
+                                <option>Madre</option>
+                                <option>Hermano</option>
+                                <option>Hermana</option>
+                                <option>Abuelo</option>
+                                <option>Abuela</option>
+                                <option>Tío</option>
+                                <option>Tía</option>
+                                <option>Primo</option>
+                                <option>Prima</option>
+                            </select> 
+                    </div>
+
+                    <div>
+                        <label for="Dislipidemias">Dislipidemias: </label> <input type="radio" name="Dislipidemias" value="SI"/>SI <input type="radio" name="Dislipidemias" value="NO"/>NO
+                        <input type="radio" name="disipiFam" value="SI"/>SI <input type="radio" name="dislipiFam" value="NO"/>NO
+                        <select name="DislipiFam">
+                                <option>Padre</option>
+                                <option>Madre</option>
+                                <option>Hermano</option>
+                                <option>Hermana</option>
+                                <option>Abuelo</option>
+                                <option>Abuela</option>
+                                <option>Tío</option>
+                                <option>Tía</option>
+                                <option>Primo</option>
+                                <option>Prima</option>
+                            </select> 
+                    </div>
+
+                    <div>
+                        <label for="Cáncer">Cáncer: </label> <input type="radio" name="Cáncer" value="SI"/>SI <input type="radio" name="Cáncer" value="NO"/>NO
+                        <input type="radio" name="cancerFam" value="SI"/>SI <input type="radio" name="cancerFam" value="NO"/>NO
+                        <select name="CancerFam">
+                                <option>Padre</option>
+                                <option>Madre</option>
+                                <option>Hermano</option>
+                                <option>Hermana</option>
+                                <option>Abuelo</option>
+                                <option>Abuela</option>
+                                <option>Tío</option>
+                                <option>Tía</option>
+                                <option>Primo</option>
+                                <option>Prima</option>
+                            </select> 
+                    </div>
+
+                    <div>
+                        <label for="Sobrepeso">Sobrepeso: </label> <input type="radio" name="Sobrepeso" value="SI"/>SI <input type="radio" name="Sobrepeso" value="NO"/>NO
+                        <input type="radio" name="pesoFam" value="SI"/>SI <input type="radio" name="pesoFam" value="NO"/>NO
+                        <select name="pesoFam">
+                                <option>Padre</option>
+                                <option>Madre</option>
+                                <option>Hermano</option>
+                                <option>Hermana</option>
+                                <option>Abuelo</option>
+                                <option>Abuela</option>
+                                <option>Tío</option>
+                                <option>Tía</option>
+                                <option>Primo</option>
+                                <option>Prima</option>
+                            </select> 
+                    </div>
+
+                    <div>
+                        <label for="Otros">Otro(s) antecedentes personales (cirugías o padecimientos actuales): </label> <input type="text" name="Otros" id="Otros"/>
+                    </div>
+
+                    <div>
+                        <label for="OtrosFam">Otro(s) antecedentes familiares: </label> <input type="text" name="OtrosFam" id="OtrosFam"/>
+                    </div>
+
+                    <div><br></div>
+                </form>
+
+                <form id="Antecedentes gineco-obstetricos">
+                    <div>
+                        <b>Antecedentes gineco-obstetricos</b>
+                    </div>
+
+                    <div>
+                        <label for="mestruación">Fecha última de mestruación: </label> <input type="date" name="mestruacion"/> 
+                    </div>
+
+                    <div>
+                        <label for="duracionC">Duracion del ciclo: </label> <input type="number" name="duracionC"/>
+
+                        <label for="diasS">Días de sangrado: </label> <input type="number" name="diaS1" /> a <input type="number" name="diaS2"/>
+                    </div>
+
+                    <div>
+                        <label for="CMR">¿Tienes ciclos mensuales regulares? </label> <input type="radio" name="CMR" value="SI"/>SI <input type="radio" name="CMR" value="NO"/>NO
+                    </div>
+
+                    <div>
+                        <label for="ObsCiclos">Observaciones: </label> <input type="text" name="mestruacion" size="50" id="mestruacion"/>
+                    </div>
+                    <div><br></div>
+                </form>
+
+                <form id="Signos de deficiencia">
+                    <div>
+                        <b>Signos de deficiencia o exceso</b>
+                    </div>
+
+                    <div>
+                        <label for="palidez">Palidez en piel y tegumentos: </label> <input type="radio" name="pielYteg" value="SI"/>SI <input type="radio" name="pielYteg" value="NO"/>NO
+                    </div>
+
+                    <div>
+                        <label for="acantosisN">Acantosis nigricans</label> <input type="radio" name="acantosisN" value="SI"/>SI <input type="radio" name="acantosisN" value="NO"/>NO
+                    </div>
+
+                    <div>
+                        <label for="OtrosDef">Otros: </label> <input type="text" name="OtrosDef" size="40" id="OtrosDef"/>
+                    </div>
+                    <div><br></div>
+                </form>
+
+                <form id="Signos vitales">
+                    <div>
+                        <b>Signos vitales: </b>
+                    </div>
+
+                    <div>
+                        <label for="FC">FC: </label> <input type="number" name="FC1" size="5" /> y <input type="number" name="FC2" size="5"/> lpm
+                        <label for="PresAr">Presión arterial: </label> <input type="number" name="PresAr1" size="5" />/<input type="number" name="PresAr2" size="5"/>mmHg
+                    </div>
+                    <div><br></div>
+                </form>
+
+                <form id="Riesgo nutrimental">
+                    <div>
+                        <b>Factores de riesgo nutrimental</b>
+                    </div>
+
+                    <div>
+                        <label for="Medicamentos">Medicamentos: </label> <input type="text" name="medicamentos" size="50" id="medicamentos"/>
+                    </div>
+
+                    <div>
+                        <label for="tabaquismo">Tabaquismo: </label> <input type="radio" name="tabaquismo" value="SI"/>SI <input type="radio" name="tabaquismo" value="NO"/>NO
+                        <label for="cigarros">No. de cigarros al día: </label> <input type="number" name="cigarros" value=""/>
+                    </div>
+
+                    <div>
+                        <label for="fumado">En toda su vida, ¿ha fumado más de 100 cigarros, es decir, 5 cajetillas? </label> <input type="radio" name="fumado" value="SI"/>SI <input type="radio" name="fumado" value="NO"/>NO
+                    </div>
+                    <div>
+                        <label for="alcohol">Alcohol: </label> <input type="radio" name="alcohol" value="SI"/>SI <input type="radio" name="alcohol" value="NO"/>NO
+                        <label for="frecuenciaA">Frecuencia: </label><input type="number" name="alcohol" value=""/> al mes
+                    </div>
+                    <div>
+                        <label for="drogas">Uso de drogas: </label> <input type="radio" name="drogas" value="SI"/>SI <input type="radio" name="drogas" value="NO"/>NO
+                        <label for="frecuenciaD">No. de veces/semana: </label><input type="number" name="drogas" value=""/>
+                    </div>
+                    <div>
+                        <label for="café">¿Cuántas tzas(240ml) de café o té tomas al día? </label><input type="number" name="tzscafe" value=""/>
+                        <label for="azucar">¿Cuántas cditas. de azúcar le agregas a este? </label> <input type="number" name="azucar" value=""/>
+                    </div>
+
+                    <div>
+                        <label for="sustLeche">¿Le agregas sustituto de leche? </label> <input type="radio" name="sustLeche" value="SI"/>SI <input type="radio" name="sustLeche" value="NO"/>NO
+                        <label for="cantSustL">¿Cuánto? </label> <input type="number" name="cantSustL">ml
+                    </div>
+                    <div>
+                        <label for="fármacos">¿Alguna vez has tomado fármacos para bajar de peso? </label> <input type="radio" name="farmacos" value="SI"/>SI <input type="radio" name="farmacos" value="NO"/>NO
+                        <label for="farmCuales">¿Cuáles? </label> <input type="text" name="farmCual" size="30">
+                    </div>
+                </form>
+                <br/>
+                <button id="atrasUno">Atrás</button>
+                <button id="sigTres">Siguiente</button>
+            </fieldset>
+
+            <fieldset class="tercero">
+                <legend>
+                    <h3>3. INACTIVIDAD FÍSICA</h3>
+                </legend>
+                <form>
+                    <ol>
+                      <li>Piensa en una semana normal. ¿Cuántas horas al día, en promedio, pasas sentado viendo televisión, videojuegos, computadora de LUNES A VIERNES? <input type="number" name="sentadoSem" value=""/> horas.</li>
+                        <li>Piensa en fin de semana normal. ¿Cuántas horas al día, en promedio, pasas sentado viendo televisión en SÁBADO O DOMINGO? <input type="number" name="sentadoFin" value=""/> horas.</li>
+                        <li>En promedio, ¿cuántas horas duermes al día de lunes a viernes? <input type="number" name="dormirSem" value=""/></li>
+                        <li>En promedio, ¿cuántas horas duermes al día de sábado a domingo? <input type="number" name="dormirFin" value=""/></li>
+                    </ol>
+                </form>
+                <br/>
+                <button id="atrasDos">Atrás</button>
+                <button id="sigCuatro">Siguiente</button>
+            </fieldset>
+
+            <fieldset class="cuarto">
+                <legend>
+                    <h3>4. PERCEPCIÓN DE SILUETA CORPORAL:</h3>
+                </legend>
+                <p>¿Qué diagrama representa mejor tu figura actual?</p>
+                <img src="images/figura.png" alt="Diagrama de figura"><br>
+                <input type="number" name="diagramaFig" value=""/>
+                <br/>
+                <br/>
+                <button id="atrasTres">Atrás</button>
+                <button id="sigCinco">Siguiente</button>
+            </fieldset>
+
+            <fieldset class="quinto">
+                <legend>
+                    <h3>5. ACTIVIDAD FÍSICA</h3>
+                </legend>
+                <form>
+                    <h1>IPAQ TELEFÓNICO CORTO ÚLTIMOS 7 DÍAS</h1>
+                    <p><b><u>LEA:</u></b> Ahora le voy a preguntar acerca del tiempo que Usted fue físicamente activo(a) en los últimos 7 días. Por favor activo(a) en los últimos 7 días. Por favor responda cada pregunta aún si usted no se considera una persona activa. Piense acerca de las actividades que usted hace en su trabajo, como parte del trabajo en el jardín y en la casa, para ir de un sitio a otro, y en su tiempo libre de descanso, ejercicio o deporte.</p>
+                    <p><b><u>LEA:</u></b> Ahora, piense acerca de todas las actividades vigorosas que requieren un esfuerzo físico fuerte que Usted hizo en los últimos 7 días. Actividades vigorosas son las que hacen respirar mucho más fuerte que lo normal y pueden incluir el levantamiento de objetos pesados, excavar, aeróbicos, o pedalear rápido en bicicleta. Piense solamente en esas actividades que Usted hizo por lo menos 10 minutos continuos.</p>
+                    <ol>
+                        <li>Durante los últimos 7 días. ¿Cuántos días hizo usted actividades físicas vigorosas?</li><br>
+                        <input type="number" name="diasEj" value=""/><input type="radio" name="diasEj" value="Si"/>Días por semana. <br>
+                        No sabe o no quiere contestar<input type="radio" name="diasEj" value="No dice"/>
+
+                        <p><b>[Clarificación por parte del entrevistador:</b> Piense solamente en esas actividades físicas que usted hace por lo menos 10 minutos continuos]</p>
+                        <p><b>[Nota para el entrevistador:</b><i> Si la persona entrevistada responde cero, rehúsa o no sabe, pase a la pregunta 3]</i></p>
+                        <li>¿Cuánto tiempo en total usualmente le toma realizar actividades físicas vigorosas en los días que las realiza?</li><br>
+                        <input type="number" name="horasEjer" value=""/> <label for="horasEjer">Horas por día.</label><br>
+                        <input type="number" name="minEjer" value=""/> <label for="minEjer">Minutos por día.</label><br>
+                        No sabe o no quiere contestar<input type="radio" name="horasEj" value="No dice"/>
+                        <p><b>LEA: Ahora piense en actividades que requieren esfuerzo físico moderado y que usted hizo en los últimos 7 días. Actividades físicas moderadas son las que hacen respirar algo más fuerte que lo normal e incluyen cargar cosas ligeras, montar en bicicleta a paso regular, o juego de dobles en tenis. No incluya caminar. Otra vez piense únicamente en aquellas actividades físicas que usted hizo por lo menos 10 minutos continuos.</b></p>
+                        <li>Durante <b>los últimos 7 días</b>, ¿cuántos días hizo Usted actividades físicas <b>moderadas</b>?</li><br>
+                        <input type="number" name="actMod" value=""/> <label for="diasActMod"> Días por semana </label><br>
+                        No sabe o no quiere contestar<input type="radio" name="actMod" value="No dice"/>
+                        <p><b>[Clarificación por parte del entrevistador:</b> Piense solamente en esas actividades físicas que usted hace por lo menos 10 min continuos]</p>
+                        <p><b>[Nota para el entrevistador:</b> <i>Si la persona entrevistada responde cero, rehúsa o no sabe, pase a la pregunta 5]</i></p>
+                        <li>¿Cuánto tiempo en total usualmente le dedicó en uno de esos días que hizo actividades físicas <b>moderadas</b>?</li><br>
+                        <input type="number" name="horasDiaMod" value=""/> <label for="horasModeradas"> Horas por día.</label><br>
+                        <input type="number" name="minDiaMod" value=""/> <label for="minModerdos"> Minutos por día.</label><br>
+                         No sabe o no quiere contestar<input type="radio" name="DiaMod" value="No dice"/>
+                        <p><b>[Clarificación por parte del entrevistador:</b> Piense solamente en esas actividades físicas que usted hace por lo menos 10 min continuos]</p>
+                        <p><b>[Nota para el entrevistador:</b> Se necesita un promedio de tiempo al día de uno de los días en los cuales Usted hizo actividad dísica moderada. Si la persona entrevistada no puede contestar porque la cantidad de tiempo varía día a día, o incluye tiempo dedicado en diferentes trabajos, pregunte: ¿Cuánto tiempo en total le dedicó Usted en <b>los últimos 7 días</b> a hacer actividades físicas moderadas?</p>
+                        <input type="number" name="horasXSemMod" value=""/> <label for="horasModeradas"> Horas por día.</label><br>
+                        <input type="number" name="minXSemMod" value=""/> <label for="minModerdos"> Minutos por día.</label><br>
+                         No sabe o no quiere contestar<input type="radio" name="XSemMod" value="No dice"/> 
+                        <p><b>LEA: LEA: Ahora piense en el tiempo que Usted le dedicó a caminar en los últimos 7 días. Esto incluye caminar en el trabajo y en la casa, caminar para para ir de un sitio a otro, y cualquier otra caminata que Usted haya hecho meramente por recreación, deporte, ejercicio o placer.</b></p>
+                        <li>¿Durante los <b>últimos 7 días,</b> cuántos días <b>caminó</b> Usted por lo menos 10 minutos seguidos?</li><br>
+                        <input type="number" name="caminarSem" value=""/> Días por semana<br>
+                        No sabe o no quiere contestar<input type="radio" name="XSemMod" value="No dice"/>
+                        <p><b>[Clarificación por parte del entrevistador:</b> Piense solamente acerca de la caminata que Usted da por lo menos por 10 minutos seguidos]</p>
+                        <p><b>[Notas para el entrevistador:</b> <i>Si la persona entrevistada responde cero, rehúsa o no sabe, pase a la pregunta 7]</i></p>
+                        <li>¿Cuánto tiempo en total pasó generalmente <b>caminando</b> en uno de esos días?</li><br>
+                        <input type="number" name="caminarHorasDia" value=""/> Horas por día <br>
+                        <input type="number" name="caminarMinDia" value=""/> Minutos por día<br>
+                        No sabe o no quiere contestar<input type="radio" name="caminarDia" value="No dice"/>
+                        <p><b>[Notas para el entrevistador:</b> Se necesita un promedio de tiempo de los días en los cuales Usted camina. Si la persona entrevistada no puede contestar porque la cantidad de tiempo varía mucho día a día, pregunte: ¿Cuál es la cantidad total de tiempo que Usted pasó caminando en los <b>últimos 7 días?</b></p>
+                        <input type="number" name="caminarHorasSem" value=""/>Horas por semana <br>
+                        <input type="number" name="caminarMinSem" value=""/> Minutos por día <br>
+                        No sabe o no quiere contestar<input type="radio" name="caminarHorasDia" value="No dice"/>
+                        <p><b>LEA: Ahora piense acerca del tiempo que Usted pasó sentado(a) en la semana durante los últimos 7 días. Incluya el tiempo en el trabajo, en la casa, estudiando y durante el tiempo de descanso. Esto puede incluir tiempo que pasó sentado(a) en un escritorio, visitando amistades, leyendo, sentado(a) o acostado(a) viendo televisión.</b></p>
+                        <li>CUrante los últimos 7 días. ¿Cuánto tiempo en total usted usualmente pasó <b>sentado</b> durante un <b>día en la semana</b>?</li><br>
+                        <input type="number" name="sentadoHorasSem" value=""/>Horas por semana <br>
+                        <input type="number" name="sentadoMinSem" value=""/> Minutos por día <br>
+                        No sabe o no quiere contestar<input type="radio" name="sentadoHorasSem" value="No dice"/>
+                        <p><b>[Clarificación por parte del entrevistador:</b> Incluya el tiempo que pasó acostado (despierto) así como sentado]</p>
+                        <p><b>[Nota para el entrevistador:</b> Se necesita un promedio de tiempo al día. Si la persona entrevistada no puede contestar porque la cantidad de tiempo varia día a día, pregunte: “Cuál fue la cantidad total de tiempo que Usted pasó sentado(a) el <b>Miércoles</b> pasado?</p>
+                        <input type="number" name="sentadoHorasMier" value=""/>Horas por semana <br>
+                        <input type="number" name="sentadoMinMier" value=""/> Minutos por día <br>
+                        No sabe o no quiere contestar<input type="radio" name="sentadoHorasMier" value="No dice"/>
+                    </ol>
+                </form>
+                <br/>
+                <span>
+                    <button id="atrasCuatro">Atrás</button>
+                </span>
+                <br/><br/>
+                <button class="sigMod"><a href="modulo2.html" class="siguiente">Siguiente módulo</a></button>
+            </fieldset>
+        </section>
+        <footer>
+            <input type="submit" id="enviar" value="Enviar">
+        </footer>
+        <!--document.getElementById("myDIV").style.display = "none";-->
+        <script class="primSc">
+            $(document).ready(function(){
+                $("#sigDos").click(function(){
+                    $(".segundo").show();
+                    $(".visible").hide();
+                });
+            });
+        </script>
+        
+        <script class="segSc">
+            $(document).ready(function(){
+                $("#atrasUno").click(function(){
+                    $(".segundo").hide();
+                    $(".visible").show();
+                });
+                $("#sigTres").click(function(){
+                    $(".tercero").show();
+                    $(".segundo").hide();
+                });
+            });
+        </script>
+        
+        <script class="terSc">
+            $(document).ready(function(){
+                $("#atrasDos").click(function(){
+                    $(".segundo").show();
+                    $(".tercero").hide();
+                });
+                $("#sigCuatro").click(function(){
+                    $(".cuarto").show();
+                    $(".tercero").hide();
+                });
+            });
+        </script>
+        
+        <script class="cuarSc">
+            $(document).ready(function(){
+                $("#atrasTres").click(function(){
+                    $(".tercero").show();
+                    $(".cuarto").hide();
+                });
+                $("#sigCinco").click(function(){
+                    $(".quinto").show();
+                    $(".cuarto").hide();
+                });
+            });
+        </script>
+        
+        <script class="quiSc">
+            $(document).ready(function(){
+                $("#atrasCuatro").click(function(){
+                    $(".cuarto").show();
+                    $(".quinto").hide();
+                });
+            });
+        </script>
+    </body>
+</html>
